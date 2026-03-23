@@ -406,8 +406,8 @@ ul{list-style:none}
 
 /* ===== CONTACT ===== */
 #contact{background:#fff}
-.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:start}
-.contact-info{display:flex;flex-direction:column;gap:18px}
+.contact-grid{display:grid;grid-template-columns:minmax(0,820px);gap:32px;align-items:start;justify-content:center}
+.contact-info{display:flex;flex-direction:column;gap:18px;width:100%;margin:0 auto}
 .ci-item{
   display:flex;align-items:flex-start;gap:16px;
   background:var(--light);border-radius:6px;padding:18px 20px;
@@ -580,7 +580,7 @@ ul{list-style:none}
       <a href="#programs">Programs</a>
       <a href="#gallery">Gallery</a>
       <a href="#testimonials">Reviews</a>
-      <a href="#contact">Contact</a>
+      <a href="#contact">Contact Us</a>
     </nav>
     <div class="hamburger" id="ham" onclick="toggleMenu()">
       <span></span><span></span><span></span>
@@ -592,7 +592,7 @@ ul{list-style:none}
     <a href="#programs" onclick="closeMobile()">Programs</a>
     <a href="#gallery" onclick="closeMobile()">Gallery</a>
     <a href="#testimonials" onclick="closeMobile()">Reviews</a>
-    <a href="#contact" onclick="closeMobile()">Contact</a>
+    <a href="#contact" onclick="closeMobile()">Contact Us</a>
   </div>
 </header>
 
