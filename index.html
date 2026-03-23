@@ -581,7 +581,6 @@ ul{list-style:none}
       <a href="#gallery">Gallery</a>
       <a href="#testimonials">Reviews</a>
       <a href="#contact">Contact</a>
-      <a href="#" class="cta" onclick="openModal(event)">Inquire Now</a>
     </nav>
     <div class="hamburger" id="ham" onclick="toggleMenu()">
       <span></span><span></span><span></span>
@@ -594,7 +593,6 @@ ul{list-style:none}
     <a href="#gallery" onclick="closeMobile()">Gallery</a>
     <a href="#testimonials" onclick="closeMobile()">Reviews</a>
     <a href="#contact" onclick="closeMobile()">Contact</a>
-    <a href="#" onclick="openModal(event)">Inquire Now</a>
   </div>
 </header>
 
@@ -607,7 +605,6 @@ ul{list-style:none}
       <p>LadyBug KidCare specializes in the development of your children with a focus on skill building through fun and interactive learning.</p>
       <div class="slide-btns">
         <a href="#about" class="btn-red">Learn More</a>
-        <a href="#" class="btn-outline" onclick="openModal(event)">Enroll Today!</a>
       </div>
       <div class="slide-sub">Making a difference in the lives of early learners &nbsp;·&nbsp; <a href="#contact" style="color:#fff;text-decoration:underline">Schedule a Private Tour</a></div>
     </div>
@@ -619,7 +616,6 @@ ul{list-style:none}
       <p>Our caring environment nurtures curiosity, creativity, and confidence in children from infancy through school age.</p>
       <div class="slide-btns">
         <a href="#programs" class="btn-red">View Programs</a>
-        <a href="#" class="btn-outline" onclick="openModal(event)">Enroll Today!</a>
       </div>
       <div class="slide-sub">We're ready to meet you and your child &nbsp;·&nbsp; <a href="#contact" style="color:#fff;text-decoration:underline">Schedule a Private Tour</a></div>
     </div>
@@ -631,9 +627,7 @@ ul{list-style:none}
       <p>Fully licensed by the California Department of Social Services. Proudly serving Lake Balboa, Van Nuys, and the San Fernando Valley since 2010.</p>
       <div class="slide-btns">
         <a href="#contact" class="btn-red">Contact Us</a>
-        <a href="#" class="btn-outline" onclick="openModal(event)">Enroll Today!</a>
       </div>
-      <div class="slide-sub">Limited spots available — <a href="#" onclick="openModal(event)" style="color:#fff;text-decoration:underline">inquire now</a></div>
     </div>
   </div>
   <div class="slider-dots">
@@ -913,7 +907,6 @@ ul{list-style:none}
   <h2>Now Accepting Applications for Enrollment!</h2>
   <p>Limited spots available — secure your child's place at LadyBug KidCare today.</p>
   <div class="cta-btns">
-    <a href="#" class="cta-white" onclick="openModal(event)">Inquire Now</a>
     <a href="#contact" class="cta-border">Contact Us</a>
   </div>
 </section>
@@ -949,35 +942,6 @@ ul{list-style:none}
         <div class="map-box">
           <iframe src="https://maps.google.com/maps?q=6848+Amestoy+Avenue+Lake+Balboa+CA+91406&output=embed" allowfullscreen loading="lazy" title="LadyBug KidCare map"></iframe>
         </div>
-      </div>
-      <div class="contact-form-box">
-        <h3>📬 Send Us a Message</h3>
-        <form id="contactForm" action="https://formsubmit.co/ladybugfccp@aol.com" method="POST">
-          <input type="hidden" name="_subject" value="LadyBug KidCare - Send Us a Message"/>
-          <input type="hidden" name="_captcha" value="false"/>
-          <input type="hidden" name="_template" value="table"/>
-          <input type="hidden" name="_next" value=""/>
-          <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off"/>
-          <div class="form-row">
-            <div class="fg"><label>First Name</label><input type="text" name="First Name" placeholder="Maria" required/></div>
-            <div class="fg"><label>Last Name</label><input type="text" name="Last Name" placeholder="Garcia" required/></div>
-          </div>
-          <div class="fg"><label>Email</label><input type="email" name="Email" placeholder="you@email.com" required/></div>
-          <div class="fg"><label>Phone</label><input type="tel" name="Phone" placeholder="(818) 000-0000"/></div>
-          <div class="fg"><label>Child's Age</label>
-            <select name="Child's Age">
-              <option value="">Select age range…</option>
-              <option>0–12 months (Infant)</option>
-              <option>1–2 years (Toddler)</option>
-              <option>2–3 years (Early Preschool)</option>
-              <option>3–4 years (Preschool)</option>
-              <option>4–5 years (Pre-K)</option>
-              <option>5+ years (School-Age)</option>
-            </select>
-          </div>
-          <div class="fg"><label>Message</label><textarea name="Message" placeholder="Tell us about your child and your childcare needs…" required></textarea></div>
-          <button class="btn-form" type="submit">Send Message</button>
-        </form>
       </div>
     </div>
   </div>
@@ -1031,42 +995,6 @@ ul{list-style:none}
     <span>Licensed by CA Dept. of Social Services</span>
   </div>
 </footer>
-
-<!-- ENROLLMENT MODAL -->
-<div id="modal" onclick="closeModalOut(event)">
-  <div class="modal-box">
-    <span class="modal-close-btn" onclick="closeModal()">&times;</span>
-    <h2>🐞 Inquire Now</h2>
-    <p>Interested in LadyBug KidCare? Fill out the form below and we'll be in touch within 24 hours!</p>
-    <form id="inquireForm" action="https://formsubmit.co/ladybugfccp@aol.com" method="POST">
-      <input type="hidden" name="_subject" value="LadyBug KidCare - Inquire Now"/>
-      <input type="hidden" name="_captcha" value="false"/>
-      <input type="hidden" name="_template" value="table"/>
-      <input type="hidden" name="_next" value=""/>
-      <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off"/>
-      <div class="form-row">
-        <div class="fg"><label>Parent Name</label><input type="text" name="Parent Name" placeholder="Your full name" required/></div>
-        <div class="fg"><label>Child's Name</label><input type="text" name="Child's Name" placeholder="Child's name" required/></div>
-      </div>
-      <div class="fg"><label>Email</label><input type="email" name="Email" placeholder="you@email.com" required/></div>
-      <div class="fg"><label>Phone</label><input type="tel" name="Phone" placeholder="(818) 000-0000" required/></div>
-      <div class="fg"><label>Child's Age Group</label>
-        <select name="Child's Age Group">
-          <option value="">Select…</option>
-          <option>0–12 months (Infant)</option>
-          <option>1–2 years (Toddler)</option>
-          <option>2–3 years (Early Preschool)</option>
-          <option>3–4 years (Preschool)</option>
-          <option>4–5 years (Pre-K)</option>
-          <option>5+ years (School-Age)</option>
-        </select>
-      </div>
-      <div class="fg"><label>Desired Start Date</label><input type="date" name="Desired Start Date"/></div>
-      <div class="fg"><label>Notes</label><textarea name="Notes" placeholder="Anything else we should know?"></textarea></div>
-      <button class="btn-form" type="submit">Inquire Now</button>
-    </form>
-  </div>
-</div>
 
 <script>
 const GALLERY = [
